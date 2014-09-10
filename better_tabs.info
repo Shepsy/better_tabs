@@ -1,0 +1,6 @@
+name = Better Tabs
+description = Allows you to change the position of tabs on your nodes by pinning them to parts of the screen.
+core = 7.x
+version = 7.x-1.0
+project = better_tabs
+package = "Administration"

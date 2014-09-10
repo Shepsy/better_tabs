@@ -1,0 +1,76 @@
+.tabs--primary {
+  position: fixed;
+  z-index: 100;
+  width: 80px;
+  background: white;
+  -webkit-border-radius: 0 3px 0 3px;
+  border-radius: 0 3px 0 3px;
+  border: 0 !important;
+  opacity: 0.5;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+body.bt_left .tabs--primary {
+  top: 100px;
+  left: -40px;
+}
+  body.bt_left .tabs--primary:hover {
+    left: 0px;
+  }
+body.bt_right .tabs--primary {
+  top: 100px;
+  right: -40px;
+}
+  body.bt_right .tabs--primary:hover {
+    right: 0px;
+  }
+body.bt_bottom .tabs--primary {
+  bottom: 0px;
+  left: 0px;
+}
+
+
+  .tabs--primary:hover {
+    opacity: 1;
+  }
+  .tabs--primary li {
+    display: block !important;;
+    float: none !important;;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+    .tabs--primary li a {
+      display: block !important;
+      margin: 0 !important;
+      padding: 10px 15px !important;
+      border-radius: 0 !important;
+      border: 0 !important;
+    }
+      .tabs--primary li a:hover {
+        background: #ccc !important;
+        border: 0 !important;
+      }
+      .tabs--primary li a.active {
+        background: #222 !important;
+        color: white !important;
+        border: 0 !important;
+      }
+
+@media ( max-width: 768px ) {
+  body {
+    margin-bottom: 40px !important;
+  }
+  .tabs--primary {
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+    .tabs--primary li {
+      float: left !important;
+    }
+}
